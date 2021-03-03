@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* CSS DOCTYPE */
+
+/* TABLET & MOBILE MODE */
+@media only screen and (max-width: 832px) {
+
+  /* VIDEO BACKGROUND */
+  #vidBackground{
+    display: none;
+  }
+
+
+  /* HEADER */
+  header{
+    flex-direction: column;
+  }
+  header h1{
+    margin: auto;
+    margin-top: 50px;
+    font-size: 35px;
+  }
+  header img{
+    position: absolute;
+    top: 0;
+    padding: 4px;
+    margin: auto;
+    width: 50px;
+  }
+  header img:hover{
+    transform: none;
+  }
+  header::after{
+    bottom: 100px;
+  }
+
+
+  /* NAV */
+  nav{
+    text-align: center;
+  }
+  nav li{
+  float: none;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 2px;
+  }
+  nav li:nth-child(2){
+    margin-top: 0%;
+  }
+  nav li:nth-child(3){
+    margin-top: 0%;
+  }
+  nav li:nth-child(4){
+    margin-top: 0%;
+  }
+  nav li:nth-child(5){
+    margin-top: 0%;
+  }
+  nav li:hover:not(#active){
+    transform: none;
+  }
+  #active {
+    background-color: #0F1C27;
+  }
+  #active a {
+    color: white;
+    text-decoration: none;
+  }
+  /* SCROLL BACK TO TOP BUTTON FOR MOBLIE */
+  #backToTop{
+    display: inline;
+  }
+
+  /* MAIN ARTICLE AND MEDIA */
+  #main{
+    width: auto;
+    min-width: 0px;
+  }
+  .media img{
+    width: 100%;
+  }
+}
+
+/* SOCIAL LINKS FIXED REMOVED */
+@media only screen and (max-width: 1739px){
+
+  #social{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 0px;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  #social img{
+    display: inline;
+    padding: 0px;
+  }
+}
+
+/* MOBILE HORIZONTAL MODE */
+@media only screen and (max-height: 705px) {
+  #vidBackground{
+    display: none;
+  }
+  header::after{
+    bottom: -100px;
+  }
+}
+
+/* SMALLER TEXT FOR MOBLIE USERS */
+@media only screen and (max-width: 425px){
+  body{
+    font-size: 14px;
+  }
+}
+
+/* QUERY TO REMOVE BACKGROUND VIDEO FROM INTERNET EXPLORER */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #vidBackground{
+      display: none;
+    }
+}

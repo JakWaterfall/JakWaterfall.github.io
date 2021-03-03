@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS DOCTYPE */
+
+body{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: white;
+  background-color: #7C9EB2;
+  margin: 0;
+}
+
+
+/* VIDEO BACKGROUND */
+#vidBackground video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#vidBackground a{
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 10px 150px;
+  text-decoration-style: double;
+}
+#vidBackground:target{
+    display: none;
+}
+
+
+/* HEADER */
+header{
+  display: flex;
+  flex-wrap: wrap; /* To ensure nav bar is still useable on smaller devices */
+  justify-content: center;
+}
+header h1{
+  font-family: "Courier New", Courier, monospace;
+  margin: 5% 1%;
+  font-size: 40px;
+}
+#devText{margin-top: 6%;} /* To create slant effect */
+
+header img{
+  transition-duration: 1.5s;
+  margin: 5% 0%;
+}
+header img:hover{
+  transform: scale(1.5);
+}
+header::after{
+  position: absolute;
+  z-index: -1; /* To keep at the back */
+  content: ' '; /* Need to show. However kept blank so no text appears. */
+  bottom: 250px;
+  right: 0px;
+  left: 0px;
+  height: 7000px;
+  width: auto;
+  background: #26455F;
+  transform: skewY(5deg); /* To make the slant */
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* NAV */
+nav{
+  margin: 4%;
+}
+nav ul{
+  list-style-type: none;
+  padding: 0;
+}
+nav li{
+float: left;
+}
+nav li:nth-child(2){
+  margin-top: 2%; /* To create slant effect */
+}
+nav li:nth-child(3){
+  margin-top: 4%;
+}
+nav li:nth-child(4){
+  margin-top: 6%;
+}
+nav li:nth-child(5){
+  margin-top: 8%;
+}
+nav li:hover:not(#active){
+  transform: scale(1.1);
+}
+#active a {
+  text-decoration: overline;
+  text-decoration-style: double;
+  color: #A1BAC9;
+}
+nav li a {
+  display: block; /* To keep pressable as a button in moblie mode */
+  color: white;
+  padding: 0px 30px;
+  text-decoration: none;
+}

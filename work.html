@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" >
+    <link rel="stylesheet" href="css/header-nav-other.css">
+    <link rel="stylesheet" href="css/main-article-footer.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <title>Working Event Web Page</title>
+  </head>
+  <body>
+    <!-- Video Background + Button to remove video -->
+    <div id="vidBackground">
+      <a href="#vidBackground" aria-label="Button to remove video background.">Remove Video Background.</a>
+      <video src="vids/Notebook.mp4" autoplay loop muted aria-label="Laptop looping background video."></video>
+    </div>
+
+    <!-- Header and NavBar -->
+    <header>
+      <h1>Professional</h1><h1 id="devText">Development.</h1>
+      <img style="max-width:120px;" src="./img/work/briefcase.png" alt="Briefcase Icon.">
+      <nav>
+        <ul>
+          <li><a aria-label="Link to home page." href="index.html">Home</a></li>
+          <li><a aria-label="Link to git hack page." href="githack.html">Git Hack</a></li>
+          <li><a aria-label="Link to LinkedIn tutorials page." href="linkedin.html">Linkedin Tutorials</a></li>
+          <li id="active"><a aria-label="Link to work page." href="work.html">Work</a></li>
+          <li><a aria-label="Link to about me page." href="aboutme.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main article, Social links and media -->
+    <section>
+      <div id="main">
+        <div class="text box">
+          <h3>Work.</h3>
+          <p>I was contracted out for my Excel expertise to Jane McKay at <abbr title="Riding for the Disabled Association">RDA</abbr>. My goal was to build excel spreadsheets in order to be populated by their staff and then presented to their senior leaders. The information gathered was on who attended their group sessions during the national lockdown and the kind of care they required.</p>
+          <p>I worked with one of their employees who knew the specification (and the type of data) the spreadsheet had to accommodate and I built the sheet including all of the formulas, data validation, pivot tables, conditional formatting etc. When things would break after letting their staff use them or we missed data / new important data came up that needed to be added, I worked with the same employee to maintain the sheets until everybody was happy working with them and the senior staff was happy with the results and information acquired from them.</p>
+        </div>
+        <!-- Social Links -->
+        <div id="social">
+          <a aria-label="Link to my facebook." href="https://www.facebook.com/jak.waterfall/" target="_blank" title="Facebook"><img src="./img/social/facebook.png" alt="Link to my Facebook"></a>
+          <a aria-label="Link to my Git Hub." href="https://github.com/JakWaterfall" target="_blank" title="GitHub"><img src="./img/social/github2.png" alt="Link to my GitHub"></a>
+          <a aria-label="Link to my LinkedIn." href="https://www.linkedin.com/in/jak-waterfall" target="_blank" title="LinkedIn"><img src="./img/social/linkedin2.png" alt="Link to my LinkedIn"></a>
+          <a aria-label="Link to Email me." href="mailto:N0906911@my.ntu.ac.uk" target="_blank" title="Email"><img src="./img/social/gmail.png" alt="Link to my Email"></a>
+        </div>
+      </div>
+      <!-- Media -->
+      <div class="media box">
+        <img src="./img/work/Matrix-Sheet1.png" alt="Picture of matrix spreadsheet part 1.">
+        <br>
+        <span aria-hidden="true">Matrix SpreadSheet 1</span>
+        <br>
+        <img src="./img/work/Matrix-Sheet2.png" alt="Picture of matrix spreadsheet part 2.">
+        <br>
+        <span aria-hidden="true">Matrix SpreadSheet 2</span>
+        <br>
+        <img src="./img/work/PivotTable-Sheet2.png" alt="Picture of pivot tables from spreadsheet.">
+        <br>
+        <span aria-hidden="true">Pivot Tables</span>
+        <br>
+        <img src="./img/work/Summary-Sheet.png" alt="Picture of Summary sheet from spreadsheet.">
+        <br>
+        <span aria-hidden="true">Summary Sheet</span>
+      </div>
+    </section>
+
+    <!-- Footer and attribution -->
+    <footer>
+      <span id="backToTop"><a aria-hidden="true" style="font-size: 20px; line-height: 50px;" href="#top">Back To Top</a></span>
+      <div>Icons made by <a aria-label="Link to free pick page." href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a aria-label="Link to flaticon webpage." href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS DOCTYPE */
+
+/* Main article, Social links and media */
+section{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section a{
+  color: white;
+  text-decoration-style: double;
+}
+#main{
+  width: 40%;
+  min-width: 740px;
+}
+.box{
+  background-color: #26455F;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5);
+}
+.text{
+  /* background-color: #26455F; */
+  /* border-radius: 5px; */
+  margin: 2%;
+  padding: 10px 20px;
+  /* box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5); */
+}
+.text h3 {text-decoration: underline;}
+
+/* SOCIAL LINKS */
+#social{
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 20px;
+}
+#social img{
+  width: 80px;
+  margin: 2%;
+  display: block;
+  padding: 10px;
+}
+
+/* MEDIA */
+.media{
+  /* background-color: #26455F; */
+  margin: 0% 2%;
+  padding: 10px;
+  /* border-radius: 5px; */
+  /* box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5); */
+  text-align: center;
+  height: 100%; /* Stops media panel from streching to meet social links */
+}
+.media img{
+  border-radius: 5px;
+  max-width: 800px;
+}
+
+/* FOOTER */
+footer{
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  color: black;
+  margin-top: 30px;
+}
+/* BACK TO TOP BUTTON HIDDEN UNTILL MOBLIE MODE */
+#backToTop{
+  display: none;
+}
