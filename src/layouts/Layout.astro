@@ -1,0 +1,22 @@
+---
+import "../styles/global.css";
+
+const { title = "Jak Waterfall - Software Engineer" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta
+        name="description"
+        content="CV and portfolio for software engineer Jak Waterfall."
+    />
+</head>
+
+<body>
+    <slot />
+</body>
+</html>
