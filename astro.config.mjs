@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://jak-waterfall.github.io',
+  site: 'https://jakwaterfall.com',
 });
