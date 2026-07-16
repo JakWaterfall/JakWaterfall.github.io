@@ -2,22 +2,25 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
+<Layout title="Jak Waterfall - Software Engineer">
 
 <header class="hero">
     <div class="container">
         <h1>Jak Waterfall</h1>
         <h2>Software Engineer</h2>
 
-        <p>
-            Passionate software engineer with experience building modern web
-            applications, APIs, cloud services and scalable systems.
+        <p class="hero-meta">
+            Nottingham · <a href="mailto:jak_app@hotmail.co.uk">jak_app@hotmail.co.uk</a> ·
+            <a href="tel:+447969083771">07969 083771</a>
         </p>
 
         <nav>
+            <a href="#profile">Profile</a>
             <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
             <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#awards">Awards</a>
             <a href="#contact">Contact</a>
         </nav>
     </div>
@@ -29,57 +32,81 @@ import Layout from "../layouts/Layout.astro";
 <h3>Profile</h3>
 
 <p>
-I enjoy designing and building reliable software with clean architecture,
-modern tooling, and an emphasis on maintainability. My interests include
-backend engineering, cloud infrastructure, APIs, automation and web
-technologies.
+Self-driven software engineer with hands-on experience developing, testing, and
+maintaining production applications across the full software development lifecycle.
+I hold a First-Class Honours degree in Software Engineering from Nottingham Trent
+University and currently work at Microlise, where I deliver features, security fixes,
+and defect resolution within Agile, cross-functional teams.
+</p>
+
+<p>
+Proficient in C#, TypeScript, SQL, and related technologies, with practical
+experience building Angular applications from initial requirements through backend
+and frontend implementation. I take ownership of the work I deliver — from writing
+user stories and tasks through to deployment — and apply Lean principles alongside
+Agile practices to ship reliable, well-tested software.
+</p>
+
+<p>
+Strong problem-solver with a focus on debugging, performance optimisation, and
+improving user experience. Comfortable collaborating with diverse teams and
+external stakeholders, and equally effective working independently to drive features
+from concept to completion.
 </p>
 
 </section>
 
 <section id="experience">
 
-<h3>Experience</h3>
+<h3>Professional Experience</h3>
 
-<article>
+<article class="company">
+<h4>Microlise</h4>
+<p class="meta">Full-time · 2 yrs 1 mo</p>
 
-<h4>Software Engineer</h4>
+<div class="role">
+<h5>Software Engineer</h5>
+<p class="meta">Sep 2025 – Present · Nottingham, England, United Kingdom · Remote</p>
+<p class="tags">C# · TypeScript · Angular · Software Development</p>
+</div>
 
-<p class="meta">Company Name • 2022 – Present</p>
+<div class="role">
+<h5>Graduate Software Engineer</h5>
+<p class="meta">Jul 2024 – Sep 2025 · East Midlands, England, United Kingdom · On-site</p>
+<p class="tags">C++ · C# · PowerShell</p>
+</div>
 
 <ul>
-<li>Designed and developed scalable web applications.</li>
-<li>Built REST APIs.</li>
-<li>Implemented CI/CD pipelines.</li>
-<li>Worked with Agile development teams.</li>
-<li>Improved performance and reliability.</li>
+<li>Delivered software updates spanning new features, security remediation, and defect resolution, with full ownership of testing throughout.</li>
+<li>Authored tasks and user stories for assigned features, building practical experience across every stage of the software development lifecycle.</li>
+<li>Worked within Agile delivery practices and developed a hands-on understanding of Lean principles.</li>
+<li>Built Angular applications from initial requirements through backend and frontend implementation, including comprehensive testing of both layers.</li>
+<li>Collaborated across diverse software teams, gaining exposure to varied development approaches and technologies including C#, PowerShell, and TypeScript.</li>
+<li>Engaged with internal teams and external third parties to investigate and resolve issues, frequently leading cross-functional troubleshooting efforts.</li>
 </ul>
+</article>
+
+<article class="company">
+<h4>BTROS Electronics</h4>
+<p class="meta">Full-time · 6 mo</p>
+
+<div class="role">
+<h5>Graduate Software Engineer</h5>
+<p class="meta">Jan 2024 – Jun 2024 · Sutton-in-Ashfield, United Kingdom</p>
+<p class="tags">C++ · C · Embedded Systems · Software Development</p>
+</div>
 
 </article>
 
-</section>
-
-<section id="skills">
-
-<h3>Technical Skills</h3>
-
-<div class="skills">
-
-<span>JavaScript</span>
-<span>TypeScript</span>
-<span>C#</span>
-<span>.NET</span>
-<span>Node.js</span>
-<span>React</span>
-<span>Astro</span>
-<span>HTML</span>
-<span>CSS</span>
-<span>SQL</span>
-<span>Git</span>
-<span>Azure</span>
-<span>Docker</span>
-
-</div>
+<aside class="fun-fact">
+<p class="fun-fact-label">Fun fact</p>
+<p>
+Before software engineering, I spent five years as a self-employed electrician,
+working on commercial installs across the UK and Ireland — including TK Maxx,
+Currys PC World, and Vodafone stores. These days I debug code instead of
+circuit boards.
+</p>
+</aside>
 
 </section>
 
@@ -87,9 +114,160 @@ technologies.
 
 <h3>Education</h3>
 
+<article>
+<h4>Nottingham Trent University</h4>
+<p class="meta">BSc (H) Software Engineering · 2020 – 2023 · 1st Class Honours</p>
+
+<h5 class="section-heading">Key modules</h5>
+
+<div class="module">
+<h6>Advanced Analysis &amp; Design (1HIGH)</h6>
 <p>
-Bachelor's Degree in Computer Science
+I worked in a team of 7, analysing, designing and developing a smart fridge
+system from requirements derived from the problem specification. We went through
+the whole software development lifecycle of creating a detailed plan, weekly
+meetings, gathering requirements from interviews and research, creating design
+documents using UML notation such as use-case and class diagrams. Using the
+ASP.NET Razor Pages framework, we developed a piece of software based on our
+designs and implemented a test plan of a suite of tests including functional,
+unit and acceptance tests.
 </p>
+<p>See <a href="#future-fridges">Future Fridges</a> in the project section for more information.</p>
+</div>
+
+<div class="module">
+<h6>Practical Project Management (1HIGH)</h6>
+<p>
+Working in a team of seven I led the development of an ASP.NET Razor Pages
+application that empowered staff members at the charity organisation, Reach
+Learning Disability, to create comprehensive step-by-step guides utilising a
+blend of video, pictures, and text. The primary objective was to enhance the
+independence of service users at their “Flower Pod” site which provides
+therapeutic horticulture to individuals with learning disabilities, enabling
+them to navigate various tasks with greater ease. The application, accessible
+via on-site tablets, featured a text-to-speech functionality, catering to users
+with limited reading abilities. For our efforts, we were awarded a First-class
+grade.
+</p>
+</div>
+
+<div class="module">
+<h6>Advanced Software Engineering (1HIGH)</h6>
+<p>
+I studied many data structures such as continuous structures like arrays or
+linked structures such as linked lists and binary search trees. I implemented
+recursive algorithms over linked data structures such as traversing trees and
+inserting/removing/rotating nodes. I analysed algorithms using Big-O notation
+based on reasoning how the function will operate in the worst-case scenario. I
+used the principles of test-driven development to develop a Dictionary library
+class using a BST as the underlying data structure in Haskell and C++.
+</p>
+</div>
+</article>
+
+<article>
+<h4>University of Derby</h4>
+<p class="meta">Access to Higher Education Diploma (Computing) · 2019 – 2020 · 12 out of 12 Distinction</p>
+<p>
+This Diploma is designed to get adults back into education after being in the
+workforce for a period. During the course, I applied my tireless work ethic that
+I developed working 12 hours a day in the electrical industry on each task and
+came away with a perfect score of Distinctions for every module, coursework and
+exam.
+</p>
+<h5 class="section-heading">Key modules</h5>
+<ul>
+<li>Database Applications</li>
+<li>Introduction to Computer Architecture</li>
+<li>Object Oriented Programming</li>
+<li>Big Data</li>
+<li>Web page Design and Production</li>
+<li>Advanced Mathematics 1</li>
+</ul>
+</article>
+
+</section>
+
+<section id="skills">
+
+<h3>Skills / Technologies</h3>
+
+<div class="skills">
+<span>C++</span>
+<span>Java</span>
+<span>.NET</span>
+<span>OOP Principles</span>
+<span>SQL</span>
+<span>Data Structures</span>
+<span>Python</span>
+<span>Git</span>
+<span>Algorithms</span>
+<span>HTML/CSS</span>
+<span>JS</span>
+</div>
+
+</section>
+
+<section id="projects">
+
+<h3>Projects</h3>
+
+<article id="wheres-my-tutor">
+<h4>Where's My Tutor</h4>
+<p class="meta">Android · Java · Firebase · Google Maps</p>
+<p>
+Developed an Android app to enhance productivity and facilitate effective time
+management for both students and staff members at the university. The
+application catered to two distinct user groups, students and staff, offering
+lecturers the capability to broadcast their location through GPS or manually set
+it using Google Maps for students. Additionally, the app enabled users to
+schedule and monitor meetings, specifying details such as timeframes and
+locations. It features a notification system that alerts recipients upon
+receiving a meeting request. This project afforded me valuable insights into
+the Android platform, Firebase, GPS location services, and the integration of
+the Google Maps API.
+</p>
+<p class="meta">University module: Mobile Platform Applications (1EXC)</p>
+</article>
+
+<article id="future-fridges">
+<h4>Future Fridges</h4>
+<p class="meta">ASP.NET Razor Pages · C#</p>
+<p>
+Smart fridge system developed as part of Advanced Analysis &amp; Design. Full
+software development lifecycle from requirements gathering through UML design to
+implementation and testing with functional, unit and acceptance tests.
+</p>
+</article>
+
+<article id="pool-simulation">
+<h4>2D Pool Simulation</h4>
+<p class="meta">C++ · SDL</p>
+</article>
+
+<article id="e-transport">
+<h4>E-transport Marketplace</h4>
+<p class="meta">C++ · Qt Creator · Linux · TCP Socket programming · Client-Server Architecture</p>
+</article>
+
+</section>
+
+<section id="awards">
+
+<h3>Awards</h3>
+
+<article>
+<h4>The Ryland Consulting Prize</h4>
+<p class="meta">Nottingham Trent University · 2022</p>
+<p>
+Won a scholarship from a consulting benefactor for exceptional performance and
+making the best progress during the first year at university out of the full
+student body within the Software Engineering BSc (Hons) Course.
+</p>
+<p>
+<a href="https://youtu.be/fo6j3EzpnfQ" target="_blank" rel="noopener noreferrer">Video of me accepting the award</a>
+</p>
+</article>
 
 </section>
 
@@ -98,9 +276,11 @@ Bachelor's Degree in Computer Science
 <h3>Contact</h3>
 
 <ul class="contact">
-<li>Email: your@email.com</li>
-<li>GitHub: github.com/jakwaterfall</li>
-<li>LinkedIn: linkedin.com/in/jakwaterfall</li>
+<li>Email: <a href="mailto:jak_app@hotmail.co.uk">jak_app@hotmail.co.uk</a></li>
+<li>Phone: <a href="tel:+447969083771">07969 083771</a></li>
+<li>Location: Nottingham, United Kingdom</li>
+<li>GitHub: <a href="https://github.com/JakWaterfall" target="_blank" rel="noopener noreferrer">github.com/JakWaterfall</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/jak-waterfall/" target="_blank" rel="noopener noreferrer">linkedin.com/in/jak-waterfall</a></li>
 </ul>
 
 </section>
