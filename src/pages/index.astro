@@ -1,5 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { tenureFromRoles } from "../utils/tenure";
+
+const microliseRoles = [
+    { start: { year: 2024, month: 6 }, end: { year: 2025, month: 8 } }, 
+    { start: { year: 2025, month: 8 }, end: null },
+];
+
+const microliseTenure = tenureFromRoles(microliseRoles);
 ---
 
 <Layout title="Jak Waterfall - Software Engineer">
@@ -62,7 +70,7 @@ from concept to completion.
 
 <article class="company">
 <h4>Microlise</h4>
-<p class="meta">Full-time · 2 yrs 1 mo</p>
+<p class="meta">Full-time · {microliseTenure}</p>
 
 <div class="role">
 <h5>Software Engineer</h5>
